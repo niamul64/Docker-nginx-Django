@@ -70,4 +70,17 @@ $ sudo docker ps
 # so, search(on google) for 'stop using sudo with docker' 
 # or goto: https://docs.docker.com/engine/install/linux-postinstall/
 # and follow the instruction
+
+# now we can use docker command, without 'sudo'
+# see all the containers: 
+$ docker ps -a
+# copy the name of the container and use remove command to delete the container
+$ docker rm container_name
+# here, rm = remove
+
+# we can see image ID by :
+$ docker images 
+# same way we can delete the images
+$ docker rmi image_id
+# here rmi = remove image
 ```
