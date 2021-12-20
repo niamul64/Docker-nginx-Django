@@ -16,3 +16,13 @@ NGINX is,
 ```
 
 ## 3. Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design
+
+
+## technologies that we will use-->
+```
+Docker (Create microservice Architecture)
+Django (To run web application)
+Nginx (Load balancing)
+Redis (cache)
+Gunicorn (WSGI server )
+```
