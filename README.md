@@ -79,4 +79,12 @@ COPY ./app/ /app
 RUN adduser -D user
 USER user
 ```
+<br><br>
 
+#  Now, to create docker image
+### steps:
+### 1. create a empty file called app. as mentioned in dockaer file.(this app could be any other name)
+### 2. command: (directed to the docker file folder)
+```
+$ docker build .
+```
