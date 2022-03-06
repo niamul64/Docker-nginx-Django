@@ -1,6 +1,12 @@
 # Docker
 ## 1. Docker:(gives a portable container) Docker is a tool which is used to automate the deployment of applications in lightweight containers so that applications can work efficiently in different environments.
 
+```
+Create: docker file (contains set of instructions) ---> use this file --> docker image 
+
+'Dockerfile' have no extensions
+```
+
 Note: The container is actually a software package that consists of all the dependencies required to run the application. So, miltiple containers can run on the same computer.   
 
 ### Install Docker
@@ -35,4 +41,11 @@ $ docker images
 # same way we can delete the images
 $ docker rmi image_id
 # here rmi = remove image
+```
+# docker file: (see video 1.mp4 in this reposetory and in this branch)
+### 1st line: the image that we are going to inherit from. (means, we can built a docker image --> ontop of other image)
+#### we can use a pre built image(from: hub.docker.com) and customize that:
+#### goto hub.docker.com , search python, choose first one from search list. from there choose a version of alpine. 
+```
+
 ```
