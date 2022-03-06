@@ -42,10 +42,41 @@ $ docker images
 $ docker rmi image_id
 # here rmi = remove image
 ```
+<hr>
+
 # docker file: (see video 1.mp4 in this reposetory and in this branch)
+
+
 ### 1st line: the image that we are going to inherit from. (means, we can built a docker image --> ontop of other image)
 #### we can use a pre built image(from: hub.docker.com) and customize that:
 #### goto hub.docker.com , search python, choose first one from search list. from there choose a version of alpine. 
+### 2nd line: maintainer line(optional): can be used own or company name
+### 3rd line: environment variable python un buffered 
+### 4th line: from where it copy the dependencies 
+#### copy from to
+### 5th line: pip install the packages from requirements.txt
+### 6th line: create a directory to store the project 
+### 7th line: change directory to app
+### 8th line: copy to local machine app folder to docker image app folder
+### 9th line: create user --> which will run the application
+### 10th line: switch to that user
+#### example:
+```
+FROM python:3.7-alpine
+MAINTAINER London App Developer Ltd.
+
+ENV PYTHONUNBUFFERED 1
+
+# Install dependencies --> this is a comment comment
+COPY ./requirements.txt /requirements.txt
+RUN pip install -r /requirements.txt
+
+# Setup directory structure
+RUN mkdir /app  # create a directory on our docker image named 'app'
+WORKDIR /app    # change directory to created 'app'
+COPY ./app/ /app
+
+RUN adduser -D user
+USER user
 ```
 
-```
