@@ -1,0 +1,33 @@
+
+016 GitHub
+https://github.com/
+
+016 Connecting-to-GitHub-with-SSH
+https://help.github.com/articles/connecting-to-github-with-ssh/
+
+017 Dockerfile-reference
+https://docs.docker.com/engine/reference/builder/
+
+017 Docker-Hub
+https://hub.docker.com/
+
+017 Python-Package-Index-PyPi
+https://pypi.org/
+
+017 CODE-Dockerfile
+https://gist.github.com/LondonAppDev/27c64d2c2df3555470812d4d77611389
+
+017 CODE-requirements.txt
+https://gist.github.com/LondonAppDev/a7a35a2b39ea4a3fa2c2a5283f300fc9
+
+018 Docker-Compose
+https://docs.docker.com/compose/
+
+018 CODE-docker-compose.yml
+https://gist.github.com/LondonAppDev/c45ff292b4edcc6ebd90f71722d9988c
+
+020 Django-startproject-docs
+https://docs.djangoproject.com/en/2.1/ref/django-admin/#startproject
+
+020 Docker-compose-run-command-reference
+https://docs.docker.com/compose/reference/run/
