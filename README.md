@@ -1,4 +1,4 @@
-# Docker
+# 1.Docker  2.docker compose 3.Create django project using docker configuration
 ## 1. Docker:(gives a portable container) Docker is a tool which is used to automate the deployment of applications in lightweight containers so that applications can work efficiently in different environments.
 
 ```
@@ -87,4 +87,35 @@ USER user
 ### 2. command: (directed to the docker file folder)
 ```
 $ docker build .
+```
+<br><br>
+
+## 2. docker compose: A tool that allows us to run our docker image easily from our project location. so it allows us to run our docker image easily from our project location. Docker Compose is a tool that was developed to help define and share multi-container applications. With Compose, we can create a YAML file to define the services and with a single command, can spin everything up or tear it all down.
+
+### First of--> create a file 'docker-compose.yml' at the root of our project
+
+```
+# docker-compose.yml
+version: '3' #docker  version
+
+services:
+  app: ## main of our service
+    build:
+      context: . ## . means corrent directory
+    ports:+
+      - "8000:8000"
+    volumes: # keep updating the changing
+      - ./app:/app
+    command: > ## command to run the application in a docker container
+      sh -c "python manage.py runserver 0.0.0.0:8000"
+```
+### will build our image using using docker compose..
+### Now, run command ->> docker-compose build.
+
+<br><br>
+
+# 3.Now, to create django project usig docker: (Check video 2 in this reposetory and in this branch)
+example commands: 
+```
+command docker-compose run app sh -c "django-admin.py startproject app ." # . means create app in current location
 ```
